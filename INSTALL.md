@@ -8,3 +8,8 @@ Download it under vagrantup.com and install it. Than run it:
     vagrant	up
     vagrant ssh
     cd /vagrant
+
+## Run with `make`
+
+    make all
+    make run
