@@ -1,10 +1,10 @@
 
 #include <os.h>
-#include <api/dev/proc.h>
+#include <api/suriyaa/proc.h>
 
-/* Definis un process (/dev/proc) */
+/* Definis un process (/suriyaa/proc) */
 
-char* Process::default_tty="/dev/tty";
+char* Process::default_tty="/suriyaa/tty";
 
 u32 Process::proc_pid=0;
 
