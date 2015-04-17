@@ -53,11 +53,11 @@ extern "C" void kmain(multiboot_info* mbi){
 	modm.initLink();
 
 
-	modm.install("hda0","module.dospartition",0,"/dev/hda");
-	modm.install("hda1","module.dospartition",1,"/dev/hda");
-	modm.install("hda2","module.dospartition",2,"/dev/hda");
-	modm.install("hda3","module.dospartition",3,"/dev/hda");
-	modm.mount("/dev/hda0","boot","module.ext2",NO_FLAG);
+	modm.install("hda0","module.dospartition",0,"/suriyaa/hda");
+	modm.install("hda1","module.dospartition",1,"/suriyaa/hda");
+	modm.install("hda2","module.dospartition",2,"/suriyaa/hda");
+	modm.install("hda3","module.dospartition",3,"/suriyaa/hda");
+	modm.mount("/suriyaa/hda0","boot","module.ext2",NO_FLAG);
 
 	arch.initProc();
 	
