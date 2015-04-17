@@ -8,7 +8,7 @@ Device::~Device(){
 
 Device::Device(char* n) : File(n,TYPE_DEVICE)
 {
-	fsm.addFile("/dev",this);
+	fsm.addFile("/suriyaa",this);
 }
 
 u32	Device::open(u32 flag){
