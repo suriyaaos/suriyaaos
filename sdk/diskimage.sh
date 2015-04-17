@@ -33,4 +33,4 @@ setup (hd0)
 quit
 EOF
 
-losetup -d /dev/loop1
+losetup -d /suriyaa/loop1
