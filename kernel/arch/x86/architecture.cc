@@ -39,9 +39,9 @@ void Architecture::init(){
 void Architecture::initProc(){
 	firstProc= new Process("kernel");
 	firstProc->setState(ZOMBIE);
-	firstProc->addFile(fsm.path("/dev/tty"),0);
-	firstProc->addFile(fsm.path("/dev/tty"),0);
-	firstProc->addFile(fsm.path("/dev/tty"),0);
+	firstProc->addFile(fsm.path("/suriyaa/tty"),0);
+	firstProc->addFile(fsm.path("/suriyaa/tty"),0);
+	firstProc->addFile(fsm.path("/suriyaa/tty"),0);
 	
 	
 	plist=firstProc;
