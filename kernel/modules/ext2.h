@@ -103,7 +103,7 @@ struct ext2_disk {
 	ext2_group_desc*	gd;
 	u32 				blocksize;
 	u16 				groups;		/* Total number of groups */
-	File*				dev;
+	File*				suriyaa;
 };
 
 
@@ -166,10 +166,10 @@ class Ext2 : public File
 		
 };
 
-int 			ext2_check_disk(File *dev);
-void 			ext2_get_disk_info(File*dev,Ext2 *fp);
-int 			ext2_read_gd(File* fdev,ext2_group_desc *gd,ext2_disk* info);
-int 			ext2_read_sb(File* dev,ext2_super_block *sb);
+int 			ext2_check_disk(File *suriyaa);
+void 			ext2_get_disk_info(File*suriyaa,Ext2 *fp);
+int 			ext2_read_gd(File* fsuriyaa,ext2_group_desc *gd,ext2_disk* info);
+int 			ext2_read_sb(File* suriyaa,ext2_super_block *sb);
 ext2_inode*		ext2_read_inode(ext2_disk* hd, int i_num);
 int 			ext2_is_directory(Ext2 *fp);
 int 			ext2_scan(Ext2 *dir);
