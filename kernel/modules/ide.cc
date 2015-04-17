@@ -2,7 +2,7 @@
 #include <os.h>
 #include <ide.h>
 
-#include <api/dev/ioctl.h>
+#include <api/suriyaa/ioctl.h>
 
 
 /*
@@ -80,7 +80,7 @@ int bl_write(int drive, int numblock, int count, char *buf)
 
 
 
-File* ide_mknod(char* name,u32 flag,File* dev){
+File* ide_mknod(char* name,u32 flag,File* suriyaa){
 	Ide* disk=new Ide(name);
 	disk->setId(flag);
 	return disk;
@@ -136,16 +136,16 @@ u32	Ide::write(u32 pos,u8* buffer,u32 sizee){
 u32	Ide::ioctl(u32 idd,u8* buffer){
 	u32 ret=0;
 	switch (idd){
-		case DEV_GET_TYPE:
-			ret=DEV_TYPE_DISK;
+		case SURIYAA_GET_TYPE:
+			ret=SURIYAA_TYPE_DISK;
 			break;
 			
-		case DEV_GET_STATE:
-			ret=DEV_STATE_OK;
+		case SURIYAA_GET_STATE:
+			ret=SURIYAA_STATE_OK;
 			break;
 			
-		case DEV_GET_FORMAT:
-			ret=DEV_FORMAT_BLOCK;
+		case SURIYAA_GET_FORMAT:
+			ret=SURIYAA_FORMAT_BLOCK;
 			break;
 			
 		default:
