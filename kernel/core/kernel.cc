@@ -68,7 +68,7 @@ extern "C" void kmain(multiboot_info* mbi){
 
 	
 	io.print("\n");
-	io.print("  ==== System is ready (%s - %s) ==== \n",KERNEL_DATE,KERNEL_TIME);
+	io.print("  ==== SuriyaaOS System is ready (%s - %s) ==== \n",KERNEL_DATE,KERNEL_TIME);
 	arch.enable_interrupt();
 	for (;;);
 	arch.shutdown();
