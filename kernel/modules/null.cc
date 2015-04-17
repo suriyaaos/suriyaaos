@@ -2,9 +2,9 @@
 #include <os.h>
 #include <null.h>
 
-#include <api/dev/ioctl.h>
+#include <api/suriyaa/ioctl.h>
 
-File* null_mknod(char* name,u32 flag,File* dev){
+File* null_mknod(char* name,u32 flag,File* suriyaa){
 	Null* cons=new Null(name);
 	return cons;
 }
@@ -44,16 +44,16 @@ u32	Null::write(u32 pos,u8* buffer,u32 size){
 u32	Null::ioctl(u32 id,u8* buffer){
 	u32 ret=0;
 	switch (id){
-		case DEV_GET_TYPE:
-			ret=DEV_TYPE_TTY;
+		case SURIYAA_GET_TYPE:
+			ret=SURIYAA_TYPE_TTY;
 			break;
 			
-		case DEV_GET_STATE:
-			ret=DEV_STATE_OK;
+		case SURIYAA_GET_STATE:
+			ret=SURIYAA_STATE_OK;
 			break;
 			
-		case DEV_GET_FORMAT:
-			ret=DEV_FORMAT_CHAR;
+		case SURIYAA_GET_FORMAT:
+			ret=SURIYAA_FORMAT_CHAR;
 			break;
 	
 		default:
