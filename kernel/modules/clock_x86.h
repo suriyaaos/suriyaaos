@@ -6,7 +6,7 @@
 #include <core/device.h>
 #include <io.h>
 
-#include <api/dev/clock.h>
+#include <api/suriyaa/clock.h>
 
 class Clock_x86 : public Device
 {
