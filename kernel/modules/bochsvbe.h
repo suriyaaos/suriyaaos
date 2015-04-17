@@ -6,8 +6,8 @@
 #include <core/device.h>
 #include <io.h>
 
-#include <api/dev/ioctl.h>
-#include <api/dev/fb.h>
+#include <api/suriyaa/ioctl.h>
+#include <api/suriyaa/fb.h>
 
 
 #define VBE_DISPI_ENABLED (0x01)
