@@ -43,15 +43,15 @@ File* Module::createDevice(char* name,char* module,u32 flag){
 	return NULL;
 }
 
-File* Module::mount(char* dev,char* dir,char* module,u32 flag){
-	File* fdev=fsm.path(dev);
-	if (fdev==NULL)
+File* Module::mount(char* suriyaa,char* dir,char* module,u32 flag){
+	File* fsuriyaa=fsm.path(suriyaa);
+	if (fsuriyaa==NULL)
 		return NULL;
 	int i=0;
 	File* fp;
 	while (module_builder[i] != 0){
 		if (!strcmp(module_builder[i]->module_name,module)){
-			fp=module_builder[i]->drive(dir,flag,fdev);
+			fp=module_builder[i]->drive(dir,flag,fsuriyaa);
 			if (module_builder[i]->module_type==MODULE_FILESYSTEM && fp!=NULL){
 				fsm.addFile("/mnt/",fp);
 				fp->setType(TYPE_DIRECTORY);
@@ -66,16 +66,16 @@ File* Module::mount(char* dev,char* dir,char* module,u32 flag){
 	return NULL;
 }
 
-File* Module::install(char* dir,char* module,u32 flag,char* dev){
-	File* fdev=fsm.path(dev);
-	if (fdev==NULL)
+File* Module::install(char* dir,char* module,u32 flag,char* suriyaa){
+	File* fsuriyaa=fsm.path(suriyaa);
+	if (fsuriyaa==NULL)
 		return NULL;
 	int i=0;
 	File* fp;
 	while (module_builder[i] != 0){
 		if (!strcmp(module_builder[i]->module_name,module)){
 			if (module_builder[i]->module_type==MODULE_FILESYSTEM){
-				return module_builder[i]->drive(dir,flag,fdev);
+				return module_builder[i]->drive(dir,flag,fsuriyaa);
 			}
 		}
 		
