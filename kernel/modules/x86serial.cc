@@ -2,13 +2,13 @@
 #include <os.h>
 #include <x86serial.h>
 
-#include <api/dev/ioctl.h>
-#include <api/dev/tty.h>
+#include <api/suriyaa/ioctl.h>
+#include <api/suriyaa/tty.h>
 
 
 u8 X86Serial::init_serial=0;
 
-File* x86serial_mknod(char* name,u32 flag,File* dev){
+File* x86serial_mknod(char* name,u32 flag,File* suriyaa){
 	X86Serial* cons=new X86Serial(name);
 	return cons;
 }
@@ -78,16 +78,16 @@ u32	X86Serial::write(u32 pos,u8* buffer,u32 sizee){
 u32	X86Serial::ioctl(u32 id,u8* buffer){
 	u32 ret=0;
 	switch (id){
-		case DEV_GET_TYPE:
-			ret=DEV_TYPE_TTY;
+		case SURIYAA_GET_TYPE:
+			ret=SURIYAA_TYPE_TTY;
 			break;
 			
-		case DEV_GET_STATE:
-			ret=DEV_STATE_OK;
+		case SURIYAA_GET_STATE:
+			ret=SURIYAA_STATE_OK;
 			break;
 			
-		case DEV_GET_FORMAT:
-			ret=DEV_FORMAT_CHAR;
+		case SURIYAA_GET_FORMAT:
+			ret=SURIYAA_FORMAT_CHAR;
 			break;
 		default:
 			ret=NOT_DEFINED;
