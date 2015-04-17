@@ -1,7 +1,7 @@
 #ifndef __API_TTY__
 #define __API_TTY__
 
-#include <api/dev/keyboard.h>
+#include <api/suriyaa/keyboard.h>
 
 #define TTY_NAME_LEN	16
 
