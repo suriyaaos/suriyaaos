@@ -6,7 +6,7 @@
 #include <core/device.h>
 #include <io.h>
 
-#include <api/dev/keyboard.h>
+#include <api/suriyaa/keyboard.h>
 
 class Keyboard : public Device
 {
