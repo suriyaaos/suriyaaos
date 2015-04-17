@@ -29,7 +29,7 @@ class Filesystem
 		
 	private:
 		File*	root;
-		File*	dev;
+		File*	suriyaa;
 		File*	var;
 };
 
