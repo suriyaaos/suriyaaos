@@ -25,12 +25,12 @@ class File
 		virtual u32		write(u32 pos,u8* buffer,u32 size);
 		virtual u32		ioctl(u32 id,u8* buffer);
 		virtual u32		remove();
-		virtual void	scan();
+		virtual void		scan();
 		
 		
 		void	checkName();
 		
-		u32		addChild(File* n);
+		u32	addChild(File* n);
 		File*	createChild(char* n,u8 t);
 		File* 	find(char* n);
 		u32 	mmap(u32 sizee,u32 flags,u32 offset,u32 prot);
@@ -50,9 +50,9 @@ class File
 		File*	getNext();
 		File*	getPrec();
 		File*	getLink();
-		u8		getType();
-		u32		getSize();
-		u32		getInode();
+		u8	getType();
+		u32	getSize();
+		u32	getInode();
 		
 		stat_fs stat();
 		
@@ -62,10 +62,10 @@ class File
 		char*	map_memory;	/* to mmap */
 		
 		char*	name;		/* Nom du fichier	*/
-		u32		size;		/* Taille du fichier */
-		u8		type;		/* Type de fichier */
+		u32	size;		/* Taille du fichier */
+		u8	type;		/* Type de fichier */
 		u32		inode;		/* Inode du fichier */
-		File*	dev;		/* the master device, example : /dev/hda */
+		File*	suriyaa;		/* the master device, example : /suriyaa/hda */
 		File*	link;		/* the real file, if this file is a link */
 		
 		
