@@ -10,7 +10,7 @@
 
 #include <runtime/buffer.h>
 
-#include <api/dev/proc.h>
+#include <api/suriyaa/proc.h>
 
 #define ZOMBIE	PROC_STATE_ZOMBIE
 #define CHILD	PROC_STATE_RUN
