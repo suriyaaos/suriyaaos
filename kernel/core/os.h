@@ -5,7 +5,7 @@
 #include <kernel.h>
 
 
-typedef File* (*device_driver)	(char* name,u32 flag,File* dev);
+typedef File* (*device_driver)	(char* name,u32 flag,File* suriyaa);
 
 struct module_class{
 	int					module_type;
