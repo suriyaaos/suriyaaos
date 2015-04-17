@@ -6,8 +6,8 @@
 #include <core/file.h>
 #include <io.h>
 
-#include <api/dev/ioctl.h>
-#include <api/dev/tty.h>
+#include <api/suriyaa/ioctl.h>
+#include <api/suriyaa/tty.h>
 
 class Console : public Device
 {
