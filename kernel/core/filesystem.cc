@@ -12,7 +12,7 @@ Filesystem::Filesystem(){
 void Filesystem::init(){
 	root=new File("/",TYPE_DIRECTORY);
 	
-	dev=root->createChild("dev",TYPE_DIRECTORY);		//dossier contenant les peripherique
+	suriyaa=root->createChild("suriyaa",TYPE_DIRECTORY);		//dossier contenant les peripherique
 	root->createChild("proc",TYPE_DIRECTORY);			//dossier contenant les processus tournant
 	root->createChild("mnt",TYPE_DIRECTORY);			//dossier contenant les points de montages des disques
 	File* sysd=root->createChild("sys",TYPE_DIRECTORY);	//dossier contenant toutes les infos du systemes
@@ -98,7 +98,7 @@ File* Filesystem::pivot_root(File* targetdir){
 	  File* mainChild = targetdir->getChild();
 	  newRoot->addChild(mainChild);
 	  s8 i, ii = 0;
-	  File* tempChild = mainChild->getPrec(); //Est que File doit être initialisé ? ou pas ?
+	  File* tempChild = mainChild->getPrec(); //Est que File doit Ãªtre initialisÃ© ? ou pas ?
 	      do
 	      {
 		  if(tempChild == NULL)
