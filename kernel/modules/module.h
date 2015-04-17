@@ -19,8 +19,8 @@ class Module
 		void 	init();
 		
 		File*	createDevice(char* name,char* module,u32 flag);
-		File*	mount(char* dev,char* dir,char* module,u32 flag);
-		File*	install(char* dir,char* module,u32 flag,char* dev);
+		File*	mount(char* suriyaa,char* dir,char* module,u32 flag);
+		File*	install(char* dir,char* module,u32 flag,char* suriyaa);
 };
 
 extern Module	modm;
