@@ -23,7 +23,7 @@ typedef unsigned int size_t;
 typedef int pid_t;
 typedef s64 ino_t;
 typedef s64 off_t;
-typedef int dev_t;
+typedef int suriyaa_t;
 typedef int mode_t;
 typedef int nlink_t;
 typedef int uid_t;
@@ -33,13 +33,13 @@ typedef s64 blkcnt_t;
 #define time_t s64
 
 struct stat_fs {
-    dev_t st_dev;
+    suriyaa_t st_suriyaa;
     ino_t st_ino;
     mode_t st_mode;
     nlink_t st_nlink;
     uid_t st_uid;
     gid_t st_gid;
-    dev_t st_rdev;
+    suriyaa_t st_rsuriyaa;
     off_t st_size;
     blksize_t st_blksize;
     blkcnt_t st_blocks;
