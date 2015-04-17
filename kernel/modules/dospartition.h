@@ -30,7 +30,7 @@ struct dos_partition {
 class DosPartition : public Device
 {
 	public:
-		DosPartition(char* n,File* dev,u32 num);
+		DosPartition(char* n,File* suriyaa,u32 num);
 		~DosPartition();
 		
 		
