@@ -4,8 +4,8 @@
 /*
  *	Flag indique le numero de partition
  */
-File* dospartition_mount(char* name,u32 flag,File* dev){
-	DosPartition* dos=new DosPartition(name,dev,flag);
+File* dospartition_mount(char* name,u32 flag,File* suriyaa){
+	DosPartition* dos=new DosPartition(name,suriyaa,flag);
 	return dos;
 }
 
@@ -15,9 +15,9 @@ DosPartition::~DosPartition(){
 	
 }
 
-DosPartition::DosPartition(char* n,File* dev,u32 num) : Device(n)
+DosPartition::DosPartition(char* n,File* suriyaa,u32 num) : Device(n)
 {
-	device=dev;
+	device=suriyaa;
 	numpart=num;
 	partition_info=NULL;
 	if (device!=NULL){
