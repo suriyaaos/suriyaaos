@@ -21,7 +21,7 @@ The	OS will	be built for the x86 architecture, running on	32 bits, and compatibl
 * Multitasking
 * ELF	executable in userland
 
-Modules (accessible in userland using /dev/...):
+Modules (accessible in userland using /suriyaa/...):
 * IDE disks
 * DOS
 * partitions
