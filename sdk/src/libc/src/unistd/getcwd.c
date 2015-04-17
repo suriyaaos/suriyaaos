@@ -17,7 +17,7 @@ char* getcwd( char* buf, size_t size ) {
     const char* dotp = &dots[ sizeof( dots ) ];
     const char* dotlist = dots;
     size_t dotsize = sizeof( dots ) - 1;
-    dev_t rootdev, thisdev;
+    suriyaa_t rootsuriyaa, thissuriyaa;
     ino_t rootino, thisino;
     char* path;
     register char* pathp;
@@ -49,20 +49,20 @@ char* getcwd( char* buf, size_t size ) {
         goto lose2;
     }
 
-    thisdev = st.st_dev;
+    thissuriyaa = st.st_suriyaa;
     thisino = st.st_ino;
 
     if ( stat( "/", &st ) < 0 ) {
         goto lose2;
     }
 
-    rootdev = st.st_dev;
+    rootsuriyaa = st.st_suriyaa;
     rootino = st.st_ino;
 
-    while ( !( thisdev == rootdev && thisino == rootino ) ) {
+    while ( !( thissuriyaa == rootsuriyaa && thisino == rootino ) ) {
         register DIR *dirstream;
         struct dirent* d;
-        dev_t dotdev;
+        suriyaa_t dotsuriyaa;
         ino_t dotino;
         char mount_point;
 
@@ -114,9 +114,9 @@ char* getcwd( char* buf, size_t size ) {
             goto lose;
         }
 
-        dotdev = st.st_dev;
+        dotsuriyaa = st.st_suriyaa;
         dotino = st.st_ino;
-        mount_point = dotdev != thisdev;
+        mount_point = dotsuriyaa != thissuriyaa;
 
         /* Search for the last directory. */
 
@@ -152,7 +152,7 @@ char* getcwd( char* buf, size_t size ) {
                    having found anything.  */
 
                 if ( stat( name, &st ) >= 0 &&
-                     st.st_dev == thisdev && st.st_ino == thisino ) {
+                     st.st_suriyaa == thissuriyaa && st.st_ino == thisino ) {
                     break;
                 }
             }
@@ -200,7 +200,7 @@ char* getcwd( char* buf, size_t size ) {
             ( void )closedir( dirstream );
         }
 
-        thisdev = dotdev;
+        thissuriyaa = dotsuriyaa;
         thisino = dotino;
     }
 
