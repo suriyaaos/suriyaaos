@@ -2,7 +2,7 @@
 #include <os.h>
 #include <clock_x86.h>
 
-#include <api/dev/ioctl.h>
+#include <api/suriyaa/ioctl.h>
 
 
 static void GetWeekday(unsigned int *Weekday)
@@ -58,7 +58,7 @@ static void GetTime(unsigned int *Hour, unsigned int *Minute, unsigned int *Seco
 
 
 
-File* clockx86_mknod(char* name,u32 flag,File* dev){
+File* clockx86_mknod(char* name,u32 flag,File* suriyaa){
 	Clock_x86* cons=new Clock_x86(name);
 	return cons;
 }
@@ -102,16 +102,16 @@ void Clock_x86::reset_info(){
 u32	Clock_x86::ioctl(u32 id,u8* buffer){
 	u32 ret=0;
 	switch (id){
-		case DEV_GET_TYPE:
-			ret=DEV_TYPE_TTY;
+		case SURIYAA_GET_TYPE:
+			ret=SURIYAA_TYPE_TTY;
 			break;
 			
-		case DEV_GET_STATE:
-			ret=DEV_STATE_OK;
+		case SURIYAA_GET_STATE:
+			ret=SURIYAA_STATE_OK;
 			break;
 			
-		case DEV_GET_FORMAT:
-			ret=DEV_FORMAT_CHAR;
+		case SURIYAA_GET_FORMAT:
+			ret=SURIYAA_FORMAT_CHAR;
 			break;
 			
 		case API_CLOCK_GET_INFO:
