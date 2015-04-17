@@ -38,7 +38,7 @@ static void BgaSetBank(unsigned short BankNumber)
     BgaWriteRegister(VBE_DISPI_INDEX_BANK, BankNumber);
 }
 
-File* bochs_mknod(char* name,u32 flag,File* dev){
+File* bochs_mknod(char* name,u32 flag,File* suriyaa){
 	Bochs* cons=new Bochs(name);
 	return cons;
 }
@@ -89,16 +89,16 @@ void Bochs::scan(){
 u32	Bochs::ioctl(u32 id,u8* buffer){
 	u32 ret=0;
 	switch (id){
-		case DEV_GET_TYPE:
-			ret=DEV_TYPE_FB;
+		case SURIYAA_GET_TYPE:
+			ret=SURIYAA_TYPE_FB;
 			break;
 			
-		case DEV_GET_STATE:
-			ret=DEV_STATE_OK;
+		case SURIYAA_GET_STATE:
+			ret=SURIYAA_STATE_OK;
 			break;
 			
-		case DEV_GET_FORMAT:
-			ret=DEV_FORMAT_FB;
+		case SURIYAA_GET_FORMAT:
+			ret=SURIYAA_FORMAT_FB;
 			break;
 			
 			
