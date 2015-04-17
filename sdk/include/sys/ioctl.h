@@ -5,7 +5,7 @@
 
 #include <sys/types.h>
 
-#include "../../kernel/core/api/dev/ioctl.h"
+#include "../../kernel/core/api/suriyaa/ioctl.h"
 
 int ioctl( int fd, int request, ... );
 
