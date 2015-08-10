@@ -15,8 +15,8 @@ I used *[VirtualBox-4.3.30-101610-Win.exe](https://download.virtualbox.org/virtu
 
 ## Run Vagrant
 
-Download the .zip-File and extract it. If you want to run it on Windows 8.1 put the folder under `C:\YourUsername`.
-I put that under `C:\Suriyaa`.
+Download the .zip-File and extract it. If you want to run it on Windows 10 put the folder under `C:\User\YourUsername`.
+I put that under `C:\Users\Suriyaa`.
 
 After that type this into your command line:
 
