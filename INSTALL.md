@@ -4,9 +4,14 @@
 
 ## Install Vagrant
 
-Download it under vagrantup.com and install it. Than run it:
+Download it under [www.vagrantup.com](https://www.vagrantup.com/] and install it. Than run it:
 
     vagrant	box add	lucid32	http://files.vagrantup.com/lucid32.box
+
+## Install Oracle VM VirtualBox
+
+Download it under [www.virtualbox.org](https://www.virtualbox.org/) ([Download website](https://download.virtualbox.org/virtualbox/)) and install it.
+I used *[VirtualBox-4.3.30-101610-Win.exe](https://download.virtualbox.org/virtualbox/4.3.30/VirtualBox-4.3.30-101610-Win.exe)* file to install VirtualBox v4.3.30 for Windows on my Windows 10.
 
 ## Run Vagrant
 
