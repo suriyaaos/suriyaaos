@@ -72,7 +72,7 @@ u32	Ext2::remove(){
 /*
  *	EXT2 specification
  */
-int ext2_read_sb(File* suriya,ext2_super_block *sb)
+int ext2_read_sb(File* suriyaa,ext2_super_block *sb)
 {
 	if (suriyaa!=NULL){
 		suriyaa->read((u32)1024,(u8 *) sb,sizeof(ext2_super_block));
