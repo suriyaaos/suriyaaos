@@ -1,13 +1,13 @@
 SDKDIR=./sdk
 
 help:
-	@echo "Makefile for Building Suriyaa Operating System."
+	@echo "Makefile for Building Suriyaa Operating System (sOS)."
 	@echo "Usage: make [ all | clean | help | build | run] " 
 	@echo ""
 	@echo
 
 all: 
-	@echo "Building Kernel"
+	@echo "Building (Linux) Kernel"
 	make -C ./kernel
 	@echo "Building SDK"
 	make -C ./sdk
@@ -20,7 +20,7 @@ build:
 
 
 run:
-	@echo "Running Suriyaa Operating System."
+	@echo "Running Suriyaa Operating System (sOS)."
 	cd ./sdk && sudo bash ./diskimage.sh
 	cd ./sdk && ./qemu.sh
 
