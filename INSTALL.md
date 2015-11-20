@@ -29,3 +29,9 @@ After that type this into your command line:
 
     make all
     make run
+
+# Usage
+
+## Login
+
+Login with user name **"`vagrant`"** and password **"`vagrant`"**!
