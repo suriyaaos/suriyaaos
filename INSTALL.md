@@ -4,7 +4,7 @@
 
 ## Install Vagrant
 
-Download it under [www.vagrantup.com](https://www.vagrantup.com/] and install it. Than run it:
+Download it under [www.vagrantup.com](https://www.vagrantup.com/) and install it. Than run it:
 
     vagrant	box add	lucid32	http://files.vagrantup.com/lucid32.box
 
