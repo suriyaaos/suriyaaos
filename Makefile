@@ -22,7 +22,7 @@ build:
 run:
 	@echo "Running Suriyaa Operating System (sOS)."
 	cd ./sdk && sudo bash ./diskimage.sh
-	cd ./sdk && C:/Program Files (x86)/qemu/qemu.sh
+	cd ./sdk && qemu.exe
 
 clean:
 	make -C ./kernel clean
