@@ -10,7 +10,7 @@
 
 The	goal is	to build a very	simple UNIX-based	operating	system in	C++, not just	a	"proof-of-concept".	The	OS should	be able	to boot,	start	a	userland shell,	and	be extensible.
 
-The	OS will	be built for the x86 architecture, running on	32 bits, and compatible	with IBM PCs.
+The	OS will	be built for the x86 architecture, running on	32 bits, and compatible	with IBM PCs. (It also works as a virtual machine nearly on all computers like Windows, Mac & Linux!)
 
 
 ## Specifications
