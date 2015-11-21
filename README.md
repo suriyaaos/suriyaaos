@@ -16,12 +16,12 @@ The	OS will	be built for the x86 architecture, running on	32 bits, and compatibl
 ## Specifications & Features
 
 	* Code in C++
-	* x86 32bits
-	* Boot with Grub
+	* x86-architecture -> 32-bits
+	* Boot with (GNU) Grub
 	* Kind of modular system for drivers (it's not really great)
 	* Kind of UNIX style (again: It's not great)
 	* Multitasking
-	* ELF executable in userland
+	* ELF executable in userland (-> kernel.elf)
 	* Modules (accessible in userland using /suriyaa/...) :
 		* IDE disks
 		* DOS partitions
