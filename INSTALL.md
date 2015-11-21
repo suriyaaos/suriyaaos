@@ -1,41 +1,49 @@
 # Installation guide
 
-> More informations under [how-to-create-an-operating-system.pdf](https://github.com/SuriyaaKudoIsc/suriyaaos/blob/4f6bb618a663e68a131c6f325ba2202ca4f90503/how-to-create-an-operating-system.pdf).
+> More/Other informations under [how-to-create-an-operating-system.pdf](https://github.com/SuriyaaKudoIsc/suriyaaos/blob/4f6bb618a663e68a131c6f325ba2202ca4f90503/how-to-create-an-operating-system.pdf).
+
 
 ## Install Vagrant
 
-Download it under [www.vagrantup.com](https://www.vagrantup.com/) and install it. Than run it:
+Download Vagrant under [www.vagrantup.com](https://www.vagrantup.com/) and install it. Than run it under your command line:
 
     vagrant	box add	lucid32	http://files.vagrantup.com/lucid32.box
 
+
 ## Install Oracle VM VirtualBox
 
-Download it under [www.virtualbox.org](https://www.virtualbox.org/) ([Download website](https://download.virtualbox.org/virtualbox/)) and install it.
+Download VirtualBox under [www.virtualbox.org](https://www.virtualbox.org/) ([Download website](https://download.virtualbox.org/virtualbox/)) and install it.
 I used *[VirtualBox-4.3.30-101610-Win.exe](https://download.virtualbox.org/virtualbox/4.3.30/VirtualBox-4.3.30-101610-Win.exe)* file to install VirtualBox v4.3.30 for Windows on my Windows 10.
+
 
 ## Install GNU GRUB
 
 We don't need to install GRUB. It's pre-installed in suriyaaOS! :-)
 
-## Run Vagrant
 
-Download the .zip-File and extract it. If you want to run it on Windows 10 put the folder under `C:\User\YourUsername`.
-I put that under `C:\Users\Suriyaa`.
+## Build & Run using Vagrant (for Windows, OS X and Linux users)
 
-After that type this into your command line:
+Download the .zip-File and extract it.
 
+Make sure you have both Vagrant installed and this repo cloned (and an open terminal/cmd in it's folder)
+
+    # Enter the folder
     cd suriyaaos
-    vagrant	up
+
+Then run the following commands (ignore comment lines starting with #):
+
+    # Starts Vagrant VM
+    # This will start an ubuntu machine and install build-essential, make, Qemu ...
+    vagrant up
+
+    # SSH into machine
     vagrant ssh
+
+    # Once SSHed
     cd /vagrant
 
-## Run with `make`
-
+    # Build kernel, userland ...
     make all
-    make run
 
-# Usage
-
-## Login
-
-Login with user name **"`vagrant`"** and password **"`vagrant`"**!
+    # Run emulation
+    make emulate
