@@ -13,6 +13,10 @@ Download it under [www.vagrantup.com](https://www.vagrantup.com/) and install it
 Download it under [www.virtualbox.org](https://www.virtualbox.org/) ([Download website](https://download.virtualbox.org/virtualbox/)) and install it.
 I used *[VirtualBox-4.3.30-101610-Win.exe](https://download.virtualbox.org/virtualbox/4.3.30/VirtualBox-4.3.30-101610-Win.exe)* file to install VirtualBox v4.3.30 for Windows on my Windows 10.
 
+## Install GNU GRUB
+
+We don't need to install GRUB. It's pre-installed in suriyaaOS! :-)
+
 ## Run Vagrant
 
 Download the .zip-File and extract it. If you want to run it on Windows 10 put the folder under `C:\User\YourUsername`.
