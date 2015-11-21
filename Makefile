@@ -1,13 +1,16 @@
 SDKDIR=./sdk
+VERSION=1
 
 help:
-	@echo "Makefile for Building Suriyaa Operating System (sOS)."
-	@echo "Usage: make [ all | clean | help | build | run] " 
+	@echo "Makefile for Building Suriyaa's Operating System (suriyaaOS)."
+	@echo "Please see LICENSE for licensing information."
+	@echo "Usage: make [ all | clean | help | build] " 
 	@echo ""
+	@echo "Version" $(VERSION)
 	@echo
 
 all: 
-	@echo "Building (Linux) Kernel"
+	@echo "Building Kernel"
 	make -C ./kernel
 	@echo "Building SDK"
 	make -C ./sdk
@@ -19,9 +22,9 @@ build:
 	zip -r devos-$(VERSION).zip ./
 
 
-run:
-	@echo "Running Suriyaa Operating System (sOS)."
-	cd ./sdk && sudo bash ./diskimage.sh
+emulate:
+	@echo "Running Suriyaa's Operating System (suriyaaOS)."
+	cd ./sdk && sudo ./diskimage.sh
 	cd ./sdk && ./qemu.sh
 
 clean:
