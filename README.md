@@ -13,7 +13,7 @@ The	goal is	to build a very	simple UNIX-based	operating	system in	C++, not just	
 The	OS will	be built for the x86 architecture, running on	32 bits, and compatible	with IBM PCs.
 
 
-### Specifications
+## Specifications
 
 * Code in	C++
 * x86, 32	bit	architecture
@@ -36,6 +36,7 @@ Userland:
 * API
 * Posix
 * LibC "Can" run a shell or some executables like Lua, ...
+
 
 ## Progress
 
