@@ -27,11 +27,14 @@ Download the .zip-File and extract it.
 
 Make sure you have both Vagrant installed and this repo cloned (and an open terminal/cmd in it's folder)
 
+```bash
     # Enter the folder
     cd suriyaaos
+```
 
 Then run the following commands (ignore comment lines starting with #):
 
+```bash
     # Starts Vagrant VM
     # This will start an ubuntu machine and install build-essential, make, Qemu ...
     vagrant up
@@ -47,3 +50,4 @@ Then run the following commands (ignore comment lines starting with #):
 
     # Run emulation
     make emulate
+```
