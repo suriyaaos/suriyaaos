@@ -36,3 +36,9 @@ Userland:
 * API
 * Posix
 * LibC "Can" run a shell or some executables like Lua, ...
+
+## Progress
+
+  - :white_check_mark: Compiles
+  - :white_check_mark: Builds Image
+  - :white_check_mark: Boots
