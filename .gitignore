@@ -1,30 +1,35 @@
-# Compiled Object files
+# .gitignore
+## Include project-specific ignores for suriyaaOS in this file!
+## Read about how to use .gitignore: https://help.github.com/articles/ignoring-files.
+
+### Compiled Object files
 *.slo
 *.lo
 *.o
 
-# Compiled Dynamic libraries
+### Compiled Dynamic libraries
 *.so
 *.dylib
 
-# Compiled Static libraries
+### Compiled Static libraries
 *.lai
 *.la
 *.a
 
-# Elf binaries
+### Elf binaries
 *.elf
 
-# Vagrant
+### Vagrant
 /src/.vagrant/
 
-# Other
+### Other
 /src/userland/helloworld/hello
 
-# SDK binaries
+### SDK binaries
 /src/sdk/bootdisk/bin/hello
 /src/sdk/c.img
 
+### Other stuffs
 node_modules
 .grunt
 _book
