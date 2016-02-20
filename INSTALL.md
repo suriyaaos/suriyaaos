@@ -14,7 +14,7 @@ I use *Vagrant 1.8.1 for Windows* ([Download this version](https://releases.hash
 ## Install Oracle VM VirtualBox
 
 Download VirtualBox under [www.virtualbox.org](https://www.virtualbox.org/) ([Download website](https://download.virtualbox.org/virtualbox/)) and install it.
-I used *[VirtualBox-4.3.30-101610-Win.exe](https://download.virtualbox.org/virtualbox/4.3.30/VirtualBox-4.3.30-101610-Win.exe)* file to install VirtualBox v4.3.30 for Windows on my Windows 10.
+I used before 2016 *[VirtualBox 4.3.30 for Windows](https://download.virtualbox.org/virtualbox/4.3.30/VirtualBox-4.3.30-101610-Win.exe)*. Since 2016 I use [VirtualBox 5.0.14 for Windows](http://download.virtualbox.org/virtualbox/5.0.14/VirtualBox-5.0.14-105127-Win.exe).
 
 
 ## Install GNU GRUB
