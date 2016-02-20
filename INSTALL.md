@@ -9,6 +9,7 @@ Download Vagrant under [www.vagrantup.com](https://www.vagrantup.com/) and insta
 
     vagrant	box add	lucid32	http://files.vagrantup.com/lucid32.box
 
+I use *Vagrant 1.8.1 for Windows* ([Download this version](https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1.msi)).
 
 ## Install Oracle VM VirtualBox
 
