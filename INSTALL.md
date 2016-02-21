@@ -3,6 +3,10 @@
 > More/Other informations under [how-to-create-an-operating-system.pdf](https://github.com/SuriyaaKudoIsc/suriyaaos/blob/4f6bb618a663e68a131c6f325ba2202ca4f90503/how-to-create-an-operating-system.pdf).
 
 
+## Install basic requirements
+
+If you are using Windows you need to install [MinGW](http://www.mingw.org/) or [CygWin](http://cygwin.com/)!
+
 ## Install Vagrant
 
 Download Vagrant under [www.vagrantup.com](https://www.vagrantup.com/) and install it. Than run it under your command line:
