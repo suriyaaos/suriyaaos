@@ -11,3 +11,6 @@ Installing and removing Vagrant and `lucid32`:
 
 * [Error 127 to compile 'Makefile'](http://stackoverflow.com/questions/17712213/error-127-to-compile-makefile) ([Solution](http://stackoverflow.com/a/17712334/5157221))
 * [Eclipse Make Error 127](http://stackoverflow.com/questions/3478877/eclipse-make-error-127) ([Solution](http://stackoverflow.com/a/3479872/5157221))
+* 
+## `loop` output error
+* [Cannot delete device /dev/loop0](http://stackoverflow.com/questions/5881134/cannot-delete-device-dev-loop0) ([Solution](http://stackoverflow.com/a/5882272/5157221))
