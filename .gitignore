@@ -21,6 +21,7 @@
 
 ### Vagrant
 /src/.vagrant/
+/.vagrant/
 
 ### Other
 /src/userland/helloworld/hello
