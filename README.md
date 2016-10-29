@@ -86,7 +86,7 @@ Distributed under the Apache License 2.0. See [`LICENSE.md`][license] file for m
 
 
 <!-- Links -->
-[suriyaaos]: https://suriyaaos.github.io/
+[suriyaaos]: https://suriyaaos.tk/
 [creator]: https://j.mp/ToSuriyaa
 [github]: https://github.com/SuriyaaKudoIsc/suriyaaos
 
