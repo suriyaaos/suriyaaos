@@ -1,0 +1,14 @@
+# Travis CI (https://travis-ci.org/suriyaaos/suriyaaos)
+sudo: required
+
+before_install:
+  - chmod a+x script/bootstrap
+  - chmod a+x script/branding
+  - chmod a+x script/cibuild
+  - chmod a+x script/setenv
+
+install: "./script/bootstrap"
+
+language: c
+
+script: "./script/cibuild"

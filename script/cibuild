@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+script/branding
+make all

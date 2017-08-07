@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Script to set up environment
+echo Downloading Vagrant...
+sudo apt-get -y install vagrant
+
+echo Downloading nasm...
+sudo apt-get -y install nasm
+
+echo Downloading VirtualBox...
+sudo apt-get -y install virtualbox
+
+echo Add lucid32 to Vagrant...
+vagrant	box add	lucid32	https://files.vagrantup.com/lucid32.box
