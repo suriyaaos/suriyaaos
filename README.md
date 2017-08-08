@@ -1,4 +1,4 @@
-# suriyaaOS
+# suriyaaOS [![Travis Build Status](https://img.shields.io/travis/suriyaaos/suriyaaos.svg?style=flat-square)](https://travis-ci.org/suriyaaos/suriyaaos)
 
  <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/SuriyaaOS-logo.png"
  hspace="20" align="left" height="333"/>
