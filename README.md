@@ -6,7 +6,7 @@
 <!-- Non-breaking space -->
 &nbsp;
 
-> A simple, basic, open-sourced UNIX-like operating system built by [Suriyaa Kudo][creator] for iSC Enterprise Group operating systems.
+> A simple, basic, open-sourced UNIX-like operating system built by [Suriyaa][creator].
 
 **Notice:** This ReadMe only documents a subset of suriyaaOS's features. For additional documentation please see the [suriyaaOS site][suriyaaos].
 
@@ -80,15 +80,15 @@ Find more information in these files:
 
 ## License
 
-Copyright © 2015-present [Suriyaa Kudo][creator]. All rights reserved.
+Copyright © 2015-present [Suriyaa Sundararuban][creator]. All rights reserved.
 
 Distributed under the Apache License 2.0. See [`LICENSE.md`][license] file for more copyright informations.
 
 
 <!-- Links -->
-[suriyaaos]: https://suriyaaos.tk/
-[creator]: https://j.mp/ToSuriyaa
-[github]: https://github.com/SuriyaaKudoIsc/suriyaaos
+[suriyaaos]: https://suriyaaos.github.io/
+[creator]: https://about.suriyaa.tk
+[github]: https://github.com/suriyaaos/suriyaaos
 
 [unix]: https://en.wikipedia.org/wiki/UNIX
 [win]: http://windows.microsoft.com/en-US/windows/home
